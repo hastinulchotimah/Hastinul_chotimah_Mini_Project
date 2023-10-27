@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from "./navbar";
 import axios from 'axios';
+import backgroundImage from "./booking.avif";
 
 class MakeupBookingForm extends Component {
   constructor(props) {
@@ -160,14 +161,19 @@ class MakeupBookingForm extends Component {
       }
     }
   }
-
+ 
 
   render() {
+    const backgroundStyle = {
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "110vh",
+    };
     return (
       <div>
         <Navbar />
-        <div className="bg-[url('booking22.avif')] bg-cover bg-center min-h-screen">
-          <div className="mx-auto p-9 rounded-lg shadow-md opacity-90">
+          <div className="mx-auto p-9 rounded-lg shadow-md opacity-90" style={backgroundStyle}>
             <h2 className="text-2xl font-semibold mb-4 text-center text-black">Booking Jasa Makeup</h2>
             {this.state.successMessage && (
               <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
@@ -259,7 +265,6 @@ class MakeupBookingForm extends Component {
             </form>
           </div>
         </div>
-      </div>
     );
   }
 }
