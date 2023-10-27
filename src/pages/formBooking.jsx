@@ -178,7 +178,7 @@ class MakeupBookingForm extends Component {
               <div className="">
                 <label className="block text-black font-semibold">Nama:</label>
                 <input
-                  className="border border-white rounded-lg p-2 w-full"
+                  className="border border-grey-300 rounded-lg p-2 w-full"
                   type="text"
                   name="name"
                   value={this.state.isEditMode ? this.state.currentBooking.name : this.state.name}
