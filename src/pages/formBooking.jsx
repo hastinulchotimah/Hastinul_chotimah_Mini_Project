@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from "./navbar";
+import Navbar from "../components/navbar";
 import axios from 'axios';
 import backgroundImage from "./booking.avif";
 

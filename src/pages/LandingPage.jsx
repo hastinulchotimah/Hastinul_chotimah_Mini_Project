@@ -1,8 +1,8 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "./copyright";
-import Navbar from "./navbar";
+import Footer from "../components/copyright";
+import Navbar from "../components/navbar";
 import backgroundImage from "./booking.avif";
 
 export default function LandingPage() {

@@ -50,7 +50,7 @@ class MakeupList extends Component {
   addBooking = (newBooking) => {
     axios.post('https://651b95ed194f77f2a5ae9790.mockapi.io/makeup', newBooking)
       .then((response) => {
-        const updatedBooking = response.data; // Data baru dari server
+        const updatedBooking = response.data; 
         this.setState((prevState) => {
           const newId = prevState.lastUsedId + 1;
           updatedBooking.id = newId;
