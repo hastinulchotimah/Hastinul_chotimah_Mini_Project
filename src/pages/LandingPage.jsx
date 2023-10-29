@@ -12,6 +12,10 @@ export default function LandingPage() {
     backgroundPosition: "center",
   };
 
+  const handleBookNowClick = () => {
+    alert("Selamat datang di Form Booking!"); 
+  };
+
   return (
     <div className="flex flex-col h-screen">
       <Navbar />
@@ -23,7 +27,7 @@ export default function LandingPage() {
           <p>where beauty meets you. Discover the secrets to looking stunning with us.</p>
          <br />
          <div className="space-y-1 flex">
-            <Link to="/booking" className="rounded-full bg-white px-4 py-2 text-center font-bold text-black hover:bg-pink-600">
+            <Link to="/booking" onClick={handleBookNowClick } className="rounded-full bg-white px-4 py-2 text-center font-bold text-black hover:bg-pink-600">
               Book Now
             </Link>  
             <Link to="/galery" className="rounded-full border border-pink-200 px-4 py-2 text-center font-bold text-white hover:bg-pink-900">
