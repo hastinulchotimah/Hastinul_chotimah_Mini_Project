@@ -44,6 +44,15 @@ function EditBookingForm(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.onSave({ ...formData });
+    setFormData({
+      name: '',
+      instagram: '',
+      alamat: '',
+      telepon: '',
+      appointmentDate: '',
+      serviceType: '',
+      message: '',
+    });
   };
 
   const handleCancel = () => {

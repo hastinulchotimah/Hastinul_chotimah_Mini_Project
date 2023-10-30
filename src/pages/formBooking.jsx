@@ -107,6 +107,7 @@ function MakeupBookingForm(props) {
             successMessage: 'Pemesanan berhasil dikirim!',
           });
           resetForm();
+          alert('Terima kasih sudah percaya dengan jasa kami');
         })
         .catch((error) => {
           console.error('Error mengupdate pemesanan:', error);
@@ -121,6 +122,7 @@ function MakeupBookingForm(props) {
             successMessage: 'Pemesanan berhasil dikirim!',
           }));
           resetForm();
+          alert('Terima kasih sudah percaya dengan jasa kami');
         })
         .catch((error) => {
           console.error('Error menyimpan pemesanan:', error);

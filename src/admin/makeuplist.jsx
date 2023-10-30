@@ -55,6 +55,7 @@ function MakeupList() {
         });
         setCurrentBooking(null);
         setIsEditMode(false);
+         resetFormData();
       })
       .catch((error) => {
         console.error('Error updating booking:', error);
