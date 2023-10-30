@@ -60,13 +60,14 @@ function EditBookingForm(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="mx-auto p-9 bg-gray-300 rounded-lg shadow-md">
+     <div className='text-center'> 
+      <strong>Form Edit Admin</strong> 
+     </div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm font-bold text-gray-700">
-          Nama:
-        </label>
+        <label className="block text-sm font-bold text-gray-700">Nama:</label>
         <input
-          className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:shadow-outline"
           type="text"
           name="name"
           value={formData.name}
@@ -74,11 +75,9 @@ function EditBookingForm(props) {
         />
       </div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm font-bold text-gray-700">
-          Nama Instagram:
-        </label>
+        <label className="block text-sm font-bold text-gray-700">Nama Instagram:</label>
         <input
-          className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:shadow-outline"
           type="text"
           name="instagram"
           value={formData.instagram}
@@ -86,11 +85,9 @@ function EditBookingForm(props) {
         />
       </div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm font-bold text-gray-700">
-          Alamat:
-        </label>
+        <label className="block text-sm font-bold text-gray-700">Alamat:</label>
         <input
-          className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:shadow-outline"
           type="text"
           name="alamat"
           value={formData.alamat}
@@ -98,11 +95,9 @@ function EditBookingForm(props) {
         />
       </div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm font-bold text-gray-700">
-          No. Telepon:
-        </label>
+        <label className="block text-sm font-bold text-gray-700">No. Telepon:</label>
         <input
-          className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:shadow-outline"
           type="text"
           name="telepon"
           value={formData.telepon}
@@ -110,11 +105,9 @@ function EditBookingForm(props) {
         />
       </div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm font-bold text-gray-700">
-          Tanggal Appointment:
-        </label>
+        <label className="block text-sm font-bold text-gray-700">Tanggal Appointment:</label>
         <input
-          className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:shadow-outline"
           type="text"
           name="appointmentDate"
           value={formData.appointmentDate}
@@ -122,11 +115,9 @@ function EditBookingForm(props) {
         />
       </div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm font-bold text-gray-700">
-          Jenis Layanan:
-        </label>
+        <label className="block text-sm font-bold text-gray-700">Jenis Layanan:</label>
         <input
-          className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:shadow-outline"
           type="text"
           name="serviceType"
           value={formData.serviceType}
@@ -134,11 +125,9 @@ function EditBookingForm(props) {
         />
       </div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm font-bold text-gray-700">
-          Pesan Tambahan:
-        </label>
+        <label className="block text-sm font-bold text-gray-700">Pesan Tambahan:</label>
         <textarea
-          className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:shadow-outline"
           name="message"
           value={formData.message}
           onChange={handleChange}
@@ -146,13 +135,13 @@ function EditBookingForm(props) {
       </div>
       <div className="mb-4">
         <button
-          className="focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
+          className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none"
           type="submit"
         >
           Simpan
         </button>
         <button
-          className="focus:shadow-outline ml-2 rounded bg-gray-500 px-4 py-2 font-bold text-white hover:bg-gray-700 focus:outline-none"
+          className="ml-2 px-4 py-2 text-white bg-gray-500 rounded hover:bg-gray-700 focus:outline-none"
           type="button"
           onClick={handleCancel}
         >

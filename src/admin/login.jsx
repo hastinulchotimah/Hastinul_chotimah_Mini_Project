@@ -10,7 +10,7 @@ function FormLogin() {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    const dummyUser = { email: 'hastinulc28@email.com', password: 'password123' };
+    const dummyUser = { email: 'hastinulc28@gmail.com', password: 'password123' };
     const user = JSON.parse(localStorage.getItem('user'));
 
     

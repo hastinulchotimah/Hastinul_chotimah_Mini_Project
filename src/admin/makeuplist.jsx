@@ -92,7 +92,9 @@ function MakeupList() {
           isEditMode={isEditMode}
         />
       )}
-      <strong>Daftar Pemesanan Makeup</strong>
+      <div className='text-center'> 
+      <strong>Daftar Pemesanan</strong> 
+     </div>
       <table className="table-auto border-collapse border border-gray-500">
         <thead>
           <tr>
