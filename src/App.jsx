@@ -5,11 +5,10 @@ import ContactUs from "./components/contactUs";
 import AboutUs from "./components/aboutUs";
 import MakeupBookingForm from "./pages/formBooking";
 import FormLogin from "./admin/login";
-
 import MakeupList from "./admin/makeuplist";
 import FAQ from "./components/faq";
 import Gallery from "./pages/galeri";
-import Footer from "./components/copyright";
+import Footer from "./components/footer";
 
 function App() {
   return (
