@@ -14,7 +14,7 @@ export default function LandingPage() {
   };
 
   const handleBookNowClick = () => {
-    alert("Selamat datang di Form Booking!");
+    alert("Selamat datang di Form Booking Aci MakeupArt!");
     navigate("/booking"); 
   };
 
