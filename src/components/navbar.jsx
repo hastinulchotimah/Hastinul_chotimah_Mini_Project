@@ -37,7 +37,7 @@ class Navbar extends React.Component {
             </li>
             <li className="inline-block">
             <Link to="/formlogin" className="text-white hover:text-red-900">
-              <button className="bg-blue-500 text-white px-3 py-1 rounded-full hover:bg-blue-700">Login</button>
+              <button className="bg-white text-black px-3 py-1 rounded-full hover:bg-gray-200">Login</button>
             </Link>
           </li>
           </ul>

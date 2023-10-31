@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "../components/copyright";
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import backgroundImage from "./booking.avif";
 
@@ -23,7 +23,7 @@ export default function LandingPage() {
       <Navbar />
       <div className="bg-pink-800 text-white flex-grow p-40 text-center flex flex-col items-center sm:flex-row sm:justify-between" style={backgroundStyle}>
         <div className="text-center sm:text-left">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mb-4 text-black">
             Welcome To our  <br /> MakeUp Artist Website
           </h1>
           <p>where beauty meets you. Discover the secrets to looking stunning with us.</p>

@@ -20,8 +20,8 @@ export default function Footer() {
             height="1"
           />
         </div>
-        <div className="bg-white-600 flex flex-col sm:flex-row">
-          <div className="rounded-social-buttons flex flex-col space-y-2 mx-auto text-center">
+        <div className="bg-white-600 flex flex-col sm:flex-row ">
+          <div className="rounded-social-buttons flex flex-col space-y-1 mx-auto text-center">
             <p className="font-bold text-black">Sosial Media</p>
             <a className="social-button" href="https://instagram.com/hastinul_chotimah?igshid=YTQwZjQ0NmI0OA==" target="_blank">
               <img src="instagram.jpeg" width="30" height="60" alt="Instagram" />
